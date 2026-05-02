@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  [data-theme="dark"] :focus-visible {
+    @apply outline-vibrant-yellow outline-2 outline-offset-2;
+  }
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  --font-varela: "Varela Round", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  --color-rainbow-red: var(--color-red-500);
+  --color-rainbow-orange: var(--color-orange-500);
+  --color-rainbow-yellow: var(--color-yellow-500);
+  --color-rainbow-green: var(--color-green-500);
+  --color-rainbow-blue: var(--color-blue-500);
+  --color-rainbow-indigo: var(--color-indigo-500);
+  --color-rainbow-violet: var(--color-violet-500);
+  --color-foreground: #111;
+  --color-background-light: oklch(0.9842 0.0034 247.86);
+  --color-background-dark: oklch(0.2077 0.0398 265.75);
+  --color-coral: oklch(0.7192 0.169 13.43);
+  --color-deep-coral: oklch(0.645 0.2154 16.44);
+  --color-rich-mahogany: oklch(0.2202 0.0513 10.25);
+  --color-semi-transparent: rgba(255, 255, 255, 0.1);
+  --color-vibrant-yellow: #f1c40f;
+
+  --radius-1xl: 14px;
+
+  --shadow-white: 6px 0px 3px 0 #fff;
+  --shadow-black: 6px 0px 3px 0 #000;
+  --shadow-yellow: 6px 0px 3px 0 var(--color-vibrant-yellow);
+
+  --animate-wobble: wobble 1.3s cubic-bezier(0.6, 0.4, 0, 1);
+
+  @keyframes wobble {
+    0% {
+      left: -15px;
+    }
+    16.67% {
+      left: 15px;
+    }
+    33.33% {
+      left: -10px;
+    }
+    50% {
+      left: 10px;
+    }
+    66.67% {
+      left: -5px;
+    }
+    83.33% {
+      left: 5px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+}
+
+@utility glass-effect {
+  @apply bg-transparent backdrop-blur-[20px] bg-linear-[120deg,rgba(255,255,255,0.3),rgba(0,0,0,0.2)] bg-size-[30px] border border-white/60;
+}
+
+@utility transition-slow {
+  @apply duration-4500 ease-in;
+}
+
+@utility transition-fast {
+  @apply duration-200 ease-in;
+}
+
+@utility nav-link {
+  @apply no-underline block text-rich-mahogany hover:text-black transition-colors transition-fast;
+}
+
+@utility nav-link--desktop {
+  @apply rounded-md p-1 dark:text-white dark:hover:text-vibrant-yellow;
+}
+
+@utility nav-link--mobile {
+  @apply p-3 rounded-1xl border-2 border-solid border-transparent transition-all hover:bg-semi-transparent hover:backdrop-blur-lg hover:border-white;
+}
+
+@utility nav-contact-btn {
+  @apply bg-coral hover:bg-deep-coral transition-colors transition-fast text-white no-underline px-4 flex justify-center items-center gap-2 text-sm font-semibold rounded-1xl;
+}
