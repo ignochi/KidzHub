@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en" data-theme>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KidzHub — Where Play Builds Brilliant Minds and Strong Bodies</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+
+  <script src="./script.js" defer></script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-inter">
+  <header class="sticky top-0 w-full z-10">
+    <div class="bg-background-light dark:bg-background-dark p-4 sm:p-6">
+
+      <div class="flex justify-between items-center">
+        <div>
+          <a href="/" title="Go to the homepage" class="no-underline items-center" data-logo>
+            <span class="flex font-varela text-2xl font-semibold">
+              <span class="text-rainbow-red">K</span>
+              <span class="text-rainbow-orange">i</span>
+              <span class="text-rainbow-yellow">d</span>
+              <span class="text-rainbow-green">z</span>
+              <span class="text-rainbow-blue">H</span>
+              <span class="text-rainbow-indigo">u</span>
+              <span class="text-rainbow-violet">b</span>
+            </span>
+          </a>
+        </div>
+
+        <div>
+          <nav aria-label="Primary navigation" class="hidden lg:flex gap-8 items-center">
+            <ul class="h-full list-none m-0 p-0 flex gap-5 text-base">
+              <li>
+                <a href="/" class="nav-link nav-link--desktop" data-nav-link-main>
+                  Explore Activities
+                </a>
+              </li>
+              <li>
+                <a href="/" class="nav-link nav-link--desktop" data-nav-link-main>
+                  Restaurant &amp; Eatertainment
+                </a>
+              </li>
+              <li>
+                <a href="/" class="nav-link nav-link--desktop" data-nav-link-main>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="/" class="nav-link nav-link--desktop" data-nav-link-main>
+                  Help Center
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex gap-2 items-center justify-between">
+          <button type="button" data-theme-toggle class="block w-7 h-7 p-0.5 rounded-md group/set-theme-button">
+            <span class="relative block dark:hidden w-full h-full transition-transform transition-fast hover:rotate-90"
+              data-light-theme-icon>
+              <span
+                class="bg-black w-2.5 h-2.5 rounded-full absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2 transition-colors transition-fast group-hover/set-theme-button:bg-vibrant-yellow">
+              </span>
+
+              <span
+                class="bg-black w-1 h-1 rounded-full absolute top-px right-1/2 translate-x-1/2 transition-colors transition-fast group-hover/set-theme-button:bg-vibrant-yellow">
+              </span>
+              <span
+                class="bg-black w-1 h-1 rounded-full absolute bottom-px right-1/2 translate-x-1/2 transition-colors transition-fast group-hover/set-theme-button:bg-vibrant-yellow">
+              </span>
+              <span
+                class="bg-black w-1 h-1 rounded-full absolute bottom-1/2 right-px translate-y-1/2 transition-colors transition-fast group-hover/set-theme-button:bg-vibrant-yellow">
+              </span>
+              <span
+                class="bg-black w-1 h-1 rounded-full absolute bottom-1/2 left-px translate-y-1/2 transition-colors transition-fast group-hover/set-theme-button:bg-vibrant-yellow">
+              </span>
+
+              <span
+                class="bg-black w-0.5 h-0.5 rounded-full absolute top-[20%] right-[20%] transition-colors transition-fast group-hover/set-theme-button:bg-vibrant-yellow">
+              </span>
+              <span
+                class="bg-black w-0.5 h-0.5 rounded-full absolute top-[20%] left-[20%] transition-colors transition-fast group-hover/set-theme-button:bg-vibrant-yellow">
+              </span>
+              <span
+                class="bg-black w-0.5 h-0.5 rounded-full absolute bottom-[20%] right-[20%] transition-colors transition-fast group-hover/set-theme-button:bg-vibrant-yellow">
+              </span>
+              <span
+                class="bg-black w-0.5 h-0.5 rounded-full absolute bottom-[20%] left-[20%] transition-colors transition-fast group-hover/set-theme-button:bg-vibrant-yellow">
+              </span>
+            </span>
+
+            <span class="relative hidden dark:block w-full h-full" data-dark-theme-icon>
+              <span
+                class="bg-transparent w-4 h-4 rounded-full absolute bottom-1/2 left-[-10%] translate-y-1/2 shadow-yellow transition-shadow transition-fast group-hover/set-theme-button:shadow-white">
+              </span>
+            </span>
+          </button>
+
+          <button type="button"
+            class="lg:hidden w-7 h-7 py-1.5 px-1.25 rounded-md group/modal-toggle transition-all transition-fast aria-expanded:[&>span>span:first-of-type]:rotate-45 aria-expanded:[&>span>span:first-of-type]:top-1/2 aria-expanded:[&>span>span:first-of-type]:-translate-y-1/2 aria-expanded:[&>span>span:nth-child(2)]:opacity-0 aria-expanded:[&>span>span:last-child]:-rotate-45 aria-expanded:[&>span>span:last-child]:top-1/2 aria-expanded:[&>span>span:last-child]:-translate-y-1/2"
+            aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" data-modal-toggle>
+            <span class="block w-full h-full relative">
+              <span
+                class="bg-black dark:bg-white block w-full h-0.75 rounded-full absolute top-0 transition-all transition-fast"></span>
+              <span
+                class="bg-black dark:bg-white block w-full h-0.75 rounded-full absolute top-1/2 -translate-y-1/2 transition-opacity duration-100 ease-in"></span>
+              <span
+                class="bg-black dark:bg-white block w-full h-0.75 rounded-full absolute bottom-0 transition-all transition-fast"></span>
+            </span>
+          </button>
+
+          <div class="hidden lg:block">
+            <a href="/" class="nav-contact-btn h-10">
+              <span>Send us an email</span>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="relative hidden lg:block motion-reduce:hidden">
+
+          <div class="w-4.5 h-4.5 transition-transform transition-slow" data-nav-ball>
+
+            <!-- Pool Ball -->
+            <div
+              class="dark:hidden w-full h-full rounded-full bg-[radial-gradient(circle_at_50%_120%,#323232,#0a0a0a_80%,#000_100%)] relative">
+
+              <!-- highlight -->
+              <div class="absolute inset-0 rounded-full 
+            bg-[radial-gradient(circle_at_40%_35%,rgba(255,255,255,0.8)_0%,rgba(255,255,255,0)_40%)] blur-[1px]">
+              </div>
+
+              <!-- white circle -->
+              <div class="absolute w-2 h-2 bg-white rounded-full 
+            top-1 left-1.25">
+
+                <!-- number -->
+                <span
+                  class="text-[6px] leading-none font-bold text-black absolute top-[50%] left-[50%] -translate-1/2">8</span>
+              </div>
+
+            </div>
+
+            <!-- Tennis Ball -->
+            <div
+              class="hidden dark:block w-full h-full rounded-full relative overflow-hidden bg-[#9acd32] bg-[radial-gradient(circle_at_30%_30%,#d9ff6a,#9acd32_60%,#6b8e23_100%)]">
+
+              <!-- first seam -->
+              <div
+                class="w-full h-full rounded-full border-2 border-solid border-white bg-transparent absolute -top-[-40%] -left-[-40%]">
+              </div>
+
+              <!-- second seam -->
+              <div
+                class="w-full h-full rounded-full border-2 border-solid border-white bg-transparent absolute -bottom-[-50%] -right-[-50%]">
+              </div>
+
+            </div>
+          </div>
+
+          <!-- shadow -->
+          <div class="w-4.5 h-1 rounded-full bg-black/50 blur-[2px] transition-transform transition-slow"
+            data-nav-ball-shadow>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <div role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1" data-mobile-menu
+    class="glass-effect hidden lg:hidden p-4 sm:p-6 fixed top-14.75 sm:top-18.75 bottom-0 z-10 w-dvw">
+    <div class="rounded-2xl">
+      <nav aria-label="Primary navigation">
+        <ul class="list-none m-0 p-0 text-base">
+          <li>
+            <a href="/" class="nav-link nav-link--mobile">
+              Explore Activities
+            </a>
+          </li>
+          <li>
+            <a href="/" class="nav-link nav-link--mobile">
+              Restaurant &amp; Eatertainment
+            </a>
+          </li>
+          <li>
+            <a href="/" class="nav-link nav-link--mobile">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="/" class="nav-link nav-link--mobile">
+              Help Center
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="max-w-xl mx-auto mt-4">
+        <a href="/" class="nav-contact-btn h-11">
+          <span>Send us an email</span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="relative rounded-1xl overflow-hidden">
+      <div class="bg-rainbow-red dark:bg-background-dark w-full h-screen">
+        <video autoplay muted loop playsinline preload="metadata" class="w-full h-full object-cover">
+          <source src="./assets/hero_section_bg_video.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="bg-rainbow-red/20 w-full h-full absolute top-0">
+        <div class="m-4 sm:m-6">
+          <h1 class="font-varela text-[50px] leading-14 lg:text-[90px] lg:leading-23 font-bold mt-22 mb-8 lg:mx-14 text-white" data-headline>
+            Where Play Builds Brilliant Minds & Strong Bodies
+          </h1>
+          <p class="text-[18px] leading-6 text-white bg-rainbow-red/10 backdrop-blur-2xl p-4 mb-8 lg:mx-14 rounded-1xl text-outline">
+            From chess and puzzles to climbing and active games, we create a space where kids learn, move, and have fun—all in one safe, exciting environment.
+          </p>
+          <div class="flex gap-4 justify-center flex-wrap">
+            <button type="button" class="bg-coral hover:bg-deep-coral transition-colors transition-fast text-white rounded-1xl text-base px-5.25 h-10">
+              Explore Activities
+            </button>
+            <button type="button" class="bg-rainbow-orange/30 hover:bg-rainbow-red/10 backdrop-blur-2xl transition-colors transition-fast text-black rounded-1xl text-base px-5.25 h-10">
+              Book a Visit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
